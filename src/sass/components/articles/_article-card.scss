@@ -3,7 +3,7 @@
   flex-direction: column;
   position: relative;
   margin-bottom: 20px;
-  height: 400px;
+  height: 320px;
   background-color: var(--background-color);
   border-radius: 10px;
   border: 1px solid var(--secondary-border-color);
@@ -24,7 +24,7 @@
 
   @include respond-to('medium') {
     width: calc((100% / 2) - 20px);
-    height: 420px;
+    height: 350px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
@@ -187,24 +187,24 @@
 .m-article-card__info {
   flex: 1;
   position: relative;
-  padding-top: 48px;
-  height: 200px;
+  padding-top: 24px;
+  height: 50px;
   overflow: hidden;
   border-radius: 0 0 10px 10px;
   background-color: var(--background-color);
 
   @include respond-to('medium') {
-    padding-top: 53px;
+    padding-top: 32px;
   }
 
   &.no-tag {
     padding-top: 0 !important;
 
     .m-article-card__info-link {
-      padding-top: 48px;
+      padding-top: 24px;
 
       @include respond-to('medium') {
-        padding-top: 53px;
+        padding-top: 32px;
       }
     }
   }

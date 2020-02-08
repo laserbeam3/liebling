@@ -246,7 +246,7 @@ $(document).ready(() => {
 
   tippy('.js-tooltip')
 
-  shave('.js-article-card-title', 100)
+  shave('.js-article-card-title', 70)
   shave('.js-article-card-title-no-image', 250)
 
   trySearchFeature()

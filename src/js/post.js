@@ -132,7 +132,7 @@ $(document).ready(() => {
     $recommendedArticles.on('init', function () {
       prepareProgressCircle()
 
-      shave('.js-article-card-title', 100)
+      shave('.js-article-card-title', 70)
       shave('.js-article-card-title-no-image', 250)
     })
 

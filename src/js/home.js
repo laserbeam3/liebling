@@ -19,7 +19,7 @@ $(document).ready(() => {
       mobileFirst: true,
       rtl: isRTL()
     })
-    
+
     setTimeout(() => {
       $featuredArticles.slick('setPosition')
     }, 350)
