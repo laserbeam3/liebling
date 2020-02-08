@@ -18,12 +18,7 @@
         </a>
       {{/if}}
     </div>
-    {{#if primary_tag}}
-      <div class="m-article-card__info">
-        <a href="{{primary_tag.url}}" class="m-article-card__tag">{{primary_tag.name}}</a>
-    {{else}}
       <div class="m-article-card__info no-tag">
-    {{/if}}
       <a href="{{url}}" class="m-article-card__info-link">
         <div>
           <h2 class="m-article-card__title js-article-card-title {{#unless feature_image}}js-article-card-title-no-image{{/unless}}" title="{{title}}">
