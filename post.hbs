@@ -107,13 +107,6 @@ into the {body} of the default.hbs template --}}
               </script>
             </div>
             <div id="commento"></div>
-            <script defer
-              src="http://commento.laseratrest.com/js/commento.js"
-              data-no-fonts="true"
-              data-auto-init="false"
-              data-css-override="{{asset "css/commento.css"}}"
-            >
-            </script>
           </section>
 
         {{/post}}
@@ -139,4 +132,5 @@ into the {body} of the default.hbs template --}}
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
 {{#contentFor "scripts"}}
   <script defer src="{{asset "js/post.js"}}"></script>
+  <script defer src="https://commento.laseratrest.com/js/commento.js" data-no-fonts="true" data-auto-init="false" data-css-override="{{asset "css/commento.css"}}"></script>
 {{/contentFor}}
