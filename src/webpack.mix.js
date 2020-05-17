@@ -25,6 +25,7 @@ mix.js('js/helpers.js', 'js/')
   .setResourceRoot('/assets')
   .setPublicPath('../assets')
   .sass('sass/app.scss', 'css/')
+  .sass('sass/commento.scss', 'css/')
   .options({
     processCssUrls: false
   })

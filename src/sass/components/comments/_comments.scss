@@ -1,7 +1,56 @@
 .m-comments {
-  padding-top: 40px;
+  padding-top: 24px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 280px;
 
   @include respond-to('medium') {
-    padding-top: 60px;
+    max-width: 820px;
+    padding-top: 36px;
+  }
+
+  .commento-card {
+    color: var(--primary-foreground-color);
+  }
+
+  .commento-option-downvote {
+    display: none;
+  }
+
+  .commento-option-upvote {
+    display: none;
+  }
+
+  .commento-option-reply {
+    right: 32px !important;
+  }
+
+  .commento-option-edit {
+    right: 64px !important;
+  }
+
+  .commento-option-sticky,
+  .commento-option-unsticky {
+    right: 64px !important;
+  }
+
+  .commento-option-remove {
+    right: 96px !important;
+  }
+
+  .commento-option-approve {
+    right: 128px !important;
+  }
+
+  .commento-score {
+    display: none !important;
+  }
+
+  .commento-timeago::before {
+    display: none;
+  }
+
+  .commento-sort-policy-buttons-container {
+    display: none;
   }
 }

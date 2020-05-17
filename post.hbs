@@ -85,31 +85,37 @@ into the {body} of the default.hbs template --}}
         </section>
         {{/if}}
         {{!-- If you want to embed comments, this is a good place to do it! --}}
-        {{!--
           <section class="m-comments">
-            <div class="m-load-comments">
-              <div class="m-load-comments__line"></div>
-              <button class="m-icon-button filled as-load-comments js-tooltip js-load-comments" data-tippy-content="Load comments">
-                <span class="icon-comments"></span>
-              </button>
-            </div>
-            <div class="m-load-comments__iframe l-wrapper in-comments js-comments-iframe">
-              <div id="disqus_thread"></div>
+            <div class="content-centered">
+              <button class=" m-button" id="comms-btn" type="button" onclick="enable_comms()";>Discussion</button>
               <script>
-                var disqus_config = function () {
-                  this.page.url = "{{url absolute="true"}}";
-                  this.page.identifier = "ghost-{{comment_id}}"
-                };
-                (function () {
-                  var d = document, s = d.createElement('script');
-                  s.src = 'https://CHANGETHIS.disqus.com/embed.js';
-                  s.setAttribute('data-timestamp', +new Date());
-                  (d.head || d.body).appendChild(s);
-                })();
+                var comms_enabled = false
+                var enable_comms = function() {
+                  elem = document.getElementById("commento")
+                  if (!comms_enabled) {
+                    window.commento.main();
+                    comms_enabled = true;
+                    elem.style.display = "none";
+                  }
+                  s = elem.style.display;
+                  if (s == "none") {
+                    elem.style.display = "block";
+                  } else {
+                    elem.style.display = "none";
+                  }
+                }
               </script>
             </div>
+            <div id="commento"></div>
+            <script defer
+              src="http://commento.laseratrest.com/js/commento.js"
+              data-no-fonts="true"
+              data-auto-init="false"
+              data-css-override="{{asset "css/commento.css"}}"
+            >
+            </script>
           </section>
-          --}}
+
         {{/post}}
         {{!-- Related posts --}}
         {{#get "posts" limit="3" filter="tags:[{{post.tags}}]+id:-{{post.id}}" include="tags,authors" as |related|}}
