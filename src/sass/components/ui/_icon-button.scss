@@ -1,6 +1,6 @@
 .m-icon-button {
   color: var(--titles-color);
-  font-size: 1.125rem;
+  font-size: 1.35rem;
   border: 0;
   outline: 0;
   padding: 0;
@@ -36,7 +36,7 @@
     right: $mobile-space;
     width: 32px;
     height: 32px;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     z-index: 2;
 
     @include respond-to('medium') {
@@ -50,7 +50,7 @@
     right: $mobile-space;
     width: 32px;
     height: 32px;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     z-index: 2;
 
     @include respond-to('medium') {
@@ -58,7 +58,7 @@
       right: 30px;
       width: 42px;
       height: 42px;
-      font-size: 0.875rem;
+      font-size: 1.05rem;
     }
 
     @include respond-to('extra-large') {
@@ -80,7 +80,6 @@
   }
 
   &.more {
-    font-size: 6px;
     z-index: 6;
     position: relative;
 
@@ -93,12 +92,12 @@
   &.in-pagination-right {
     width: 40px;
     height: 40px;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
 
     @include respond-to('medium') {
       width: 46px;
       height: 46px;
-      font-size: 0.688rem;
+      font-size: 0.825rem;
     }
   }
 
@@ -113,7 +112,7 @@
   &.in-featured-articles {
     position: absolute;
     color: $white;
-    font-size: 0.875rem;
+    font-size: 1.05rem;
     width: 29px;
     height: 22px;
     bottom: 16px;
@@ -142,7 +141,7 @@
 
   &.in-recommended-articles {
     position: absolute;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     width: 40px;
     height: 40px;
     top: 200px;
@@ -162,34 +161,34 @@
     position: relative;
     width: 60px;
     height: 60px;
-    font-size: 1.250rem;
+    font-size: 1.5rem;
     margin: 0 auto;
     z-index: 2;
 
     @include respond-to('medium') {
       width: 80px;
       height: 80px;
-      font-size: 1.625rem;
+      font-size: 1.95rem;
     }
   }
 
   &.in-share {
     color: var(--titles-color);
-    font-size: 0.750rem;
+    font-size: 0.9rem;
     text-decoration: none;
     width: 31px;
     height: 31px;
     margin: 0 25px;
 
     @include respond-to('large') {
-      font-size: 0.875rem;
+      font-size: 1.05rem;
       width: 40px;
       height: 40px;
       margin: 0 0 20px 0;
     }
 
     @include respond-to('extra-large') {
-      font-size: 1rem;
+      font-size: 1.2rem;
       width: 50px;
       height: 50px;
     }

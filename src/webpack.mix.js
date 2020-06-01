@@ -29,7 +29,7 @@ mix.js('js/helpers.js', 'js/')
   .options({
     processCssUrls: false
   })
-  .copy('sass/fonts/icomoon/*.*', '../assets/fonts/')
+  .copy('sass/fonts/laseratrest/*.*', '../assets/fonts/')
   .browserSync({
     proxy: "localhost:2368",
     files: [
