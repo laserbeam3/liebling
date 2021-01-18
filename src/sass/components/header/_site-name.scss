@@ -1,10 +1,13 @@
 .m-site-name {
+  font-family: "Fira Sans ExtraBold", serif;
+  font-variant: small-caps;
+
   &.in-mobile-topbar {
     color: var(--titles-color);
-    font-weight: 600;
+    // font-weight: 600;
   }
 
-  &.in-desktop-menu {
-    font-weight: 700;
-  }
+  // &.in-desktop-menu {
+  //   font-weight: 700;
+  // }
 }

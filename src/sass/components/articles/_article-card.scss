@@ -201,11 +201,7 @@
     padding-top: 0 !important;
 
     .m-article-card__info-link {
-      padding-top: 24px;
-
-      @include respond-to('medium') {
-        padding-top: 32px;
-      }
+      padding-top: 25px;
     }
   }
 }

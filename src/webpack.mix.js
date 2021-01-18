@@ -30,6 +30,8 @@ mix.js('js/helpers.js', 'js/')
     processCssUrls: false
   })
   .copy('sass/fonts/laseratrest/*.*', '../assets/fonts/')
+  .copy('sass/fonts/CharisSIL/*.*', '../assets/fonts/')
+  .copy('sass/fonts/FiraSans/*.*', '../assets/fonts/')
   .browserSync({
     proxy: "localhost:2368",
     files: [

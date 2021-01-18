@@ -14,7 +14,7 @@
     <style>
       /* This font-face is here to make icons work if the Ghost instance is installed in a subdirectory */
 
-     @font-face {
+      @font-face {
         font-family: 'laseratrest';
         src: url("{{asset 'fonts/laseratrest.eot?77125376'}}");
         src: url("{{asset 'fonts/laseratrest.eot?77125376#iefix'}}") format('embedded-opentype'),
@@ -26,6 +26,39 @@
         font-style: normal;
         font-display: swap;
       }
+
+      @font-face {
+        font-family: CharisSILW;
+        src: url("{{asset 'fonts/CharisSIL-R.woff'}}");
+      }
+
+      @font-face {
+        font-family: CharisSILW;
+        font-style: italic;
+        src: url("{{asset 'fonts/CharisSIL-I.woff'}}");
+      }
+
+      @font-face {
+        font-family: CharisSILW;
+	      font-weight: bold;
+        src: url("{{asset 'fonts/CharisSIL-B.woff'}}");
+      }
+
+      @font-face {
+        font-family: CharisSILW;
+        font-weight: bold;
+        font-style: italic;
+        src: url("{{asset 'fonts/CharisSIL-BI.woff'}}");
+      }
+
+      @font-face {
+        font-family: "Fira Sans ExtraBold";
+        src: url("{{asset 'fonts/FiraSans-ExtraBold.eot'}}");
+        src: url("{{asset 'fonts/FiraSans-ExtraBold.eot#iefix'}}") format('embedded-opentype'),
+            url("{{asset 'fonts/FiraSans-ExtraBold.woff2'}}") format('woff2'),
+            url("{{asset 'fonts/FiraSans-ExtraBold.woff'}}") format('woff');
+      }
+
     </style>
     <link rel="stylesheet" type="text/css" href="{{asset "css/app.css"}}" media="screen" />
 
