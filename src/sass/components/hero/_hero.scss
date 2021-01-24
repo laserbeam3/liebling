@@ -47,6 +47,12 @@
   opacity: 0.7;
   &.in-post {
     opacity: 1;
+    background-origin: content-box;
+    padding-top: $mobile-bar-height;
+
+    @include respond-to('medium') {
+      padding-top: 65px;
+    }
   }
 }
 
