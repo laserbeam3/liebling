@@ -320,6 +320,15 @@
     }
   }
 
+  blockquote.listening {
+    color: var(--faded-foreground-color);
+
+    &:before {
+      content: none !important;
+    }
+  }
+
+
   table {
     color: var(--titles-color);
     font-size: 0.875rem;
